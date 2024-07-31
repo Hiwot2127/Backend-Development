@@ -1,6 +1,6 @@
 # Library Management System
 
-This is a console-based library management system implemented in Go. It demonstrates the use of structs, interfaces, methods, slices, and maps.
+Welcome to the console-based library management system implemented in Go.
 
 ## Features
 
