@@ -14,9 +14,20 @@ var library = services.NewLibrary()
 
 //reading user input
 func prompt() string {
-    reader := bufio.NewReader(os.Stdin)
-    input, _ := reader.ReadString('\n')
-    return strings.TrimSpace(input)
+   for {
+        reader := bufio.NewReader(os.Stdin)
+        input, err := reader.ReadString('\n')
+        if err != nil {
+            fmt.Println("Error reading input. Please try again.")
+            continue
+        }
+        input = strings.TrimSpace(input)
+        if len(input) == 0 {
+            fmt.Println("Please enter a valid input. Try again.")
+            continue
+        }
+        return input
+    }
 }
 
 // Adding a new book to the library
