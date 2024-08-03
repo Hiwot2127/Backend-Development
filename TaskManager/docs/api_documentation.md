@@ -2,7 +2,7 @@
 
 ## Overview
 
-_ The Task Management API is a RESTful service designed to facilitate the creation, retrieval, updating, and deletion of tasks. Developed using the Go programming language and the Gin framework, this API provides a robust and efficient solution for managing tasks. It supports basic CRUD operations and stores task data in an in-memory database.
+- The Task Management API is a RESTful service designed to facilitate the creation, retrieval, updating, and deletion of tasks. Developed using the Go programming language and the Gin framework, this API provides a robust and efficient solution for managing tasks. It supports basic CRUD operations and stores task data in an in-memory database.
 
 * main.go: Entry point of the application.
 * controllers/task_controller.go: Handles incoming HTTP requests and invokes the appropriate service methods.
@@ -15,21 +15,21 @@ _ The Task Management API is a RESTful service designed to facilitate the creati
 ## API Endpoints
 
 # GET /tasks
-Description: Retrieves a list of all tasks.
-Method: GET
-URL: http://localhost:8080/tasks
+- Description: Retrieves a list of all tasks.
+- Method: GET
+- URL: http://localhost:8080/tasks
 
 # GET /tasks/
-Description: Retrieves details of a specific task by ID.
-Method: GET
-URL: http://localhost:8080/tasks/{id}
-Replace {id} with the actual task ID.
+- Description: Retrieves details of a specific task by ID.
+- Method: GET
+- URL: http://localhost:8080/tasks/{id}
+- Replace {id} with the actual task ID.
 
 # POST /tasks
-Description: Creates a new task.
-Method: POST
-URL: http://localhost:8080/tasks
-Request Body:
+- Description: Creates a new task.
+- Method: POST
+-URL: http://localhost:8080/tasks
+-Request Body:
 {
   "title": "New Task",
   "description": "Description of the new task",
@@ -38,11 +38,11 @@ Request Body:
 }
 
 # PUT /tasks/
-Description: Updates an existing task by ID.
-Method: PUT
-URL: http://localhost:8080/tasks/{id}
-Replace {id} with the actual task ID.
-Request Body:
+- Description: Updates an existing task by ID.
+- Method: PUT
+- URL: http://localhost:8080/tasks/{id}
+- Replace {id} with the actual task ID.
+- Request Body:
 {
   "title": "Updated Task",
   "description": "Updated description",
@@ -51,10 +51,10 @@ Request Body:
 }
 
 # DELETE /tasks/
-Description: Deletes a task by ID.
-Method: DELETE
-URL: http://localhost:8080/tasks/{id}
-Replace {id} with the actual task ID.
+- Description: Deletes a task by ID.
+- Method: DELETE
+- URL: http://localhost:8080/tasks/{id}
+- Replace {id} with the actual task ID.
 
 ## Postman Documentation
 For detailed API documentation and to test the API endpoints using Postman, refer to the Postman documentation link below:
