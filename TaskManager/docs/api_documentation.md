@@ -2,7 +2,7 @@
 
 ## Overview
 
-- The Task Management API is a RESTful service designed to facilitate the creation, retrieval, updating, and deletion of tasks. Developed using the Go programming language and the Gin framework, this API provides a robust and efficient solution for managing tasks. It supports basic CRUD operations and stores task data in an in-memory database.
+The Task Management API is a RESTful service designed to facilitate the creation, retrieval, updating, and deletion of tasks. Developed using the Go programming language and the Gin framework, this API provides a robust and efficient solution for managing tasks. It supports basic CRUD operations and stores task data in an in-memory database.
 
 * main.go: Entry point of the application.
 * controllers/task_controller.go: Handles incoming HTTP requests and invokes the appropriate service methods.
