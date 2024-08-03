@@ -14,22 +14,22 @@ The Task Management API is a RESTful service designed to facilitate the creation
 
 ## API Endpoints
 
-# GET /tasks
+### GET /tasks
 - Description: Retrieves a list of all tasks.
 - Method: GET
 - URL: http://localhost:8080/tasks
 
-# GET /tasks/
+### GET /tasks/
 - Description: Retrieves details of a specific task by ID.
 - Method: GET
 - URL: http://localhost:8080/tasks/{id}
 - Replace {id} with the actual task ID.
 
-# POST /tasks
+### POST /tasks
 - Description: Creates a new task.
 - Method: POST
--URL: http://localhost:8080/tasks
--Request Body:
+- URL: http://localhost:8080/tasks
+- Request Body:
 {
   "title": "New Task",
   "description": "Description of the new task",
@@ -37,7 +37,7 @@ The Task Management API is a RESTful service designed to facilitate the creation
   "status": "Pending"
 }
 
-# PUT /tasks/
+### PUT /tasks/
 - Description: Updates an existing task by ID.
 - Method: PUT
 - URL: http://localhost:8080/tasks/{id}
@@ -50,7 +50,7 @@ The Task Management API is a RESTful service designed to facilitate the creation
   "status": "In Progress"
 }
 
-# DELETE /tasks/
+### DELETE /tasks/
 - Description: Deletes a task by ID.
 - Method: DELETE
 - URL: http://localhost:8080/tasks/{id}
