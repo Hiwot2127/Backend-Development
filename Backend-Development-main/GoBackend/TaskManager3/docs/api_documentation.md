@@ -101,7 +101,7 @@ The Task Management API is a RESTful service built with Go, the Gin framework, a
 
 For detailed API documentation and to test the API endpoints using Postman, refer to the Postman documentation link below:
 
-[Postman API Documentation](https://documenter.getpostman.com/view/37384694/2sA3rxpYik)
+[Postman API Documentation](https://documenter.getpostman.com/view/37384694/2sA3s1nXD2)
 
 ## Setup
 
