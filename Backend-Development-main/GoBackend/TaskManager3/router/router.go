@@ -10,7 +10,6 @@ import (
 
 func SetupRouter(db *mongo.Database, secretKey string) *gin.Engine {
 	r := gin.Default()
-
 	taskService := data.NewTaskService(db)
 	userService := data.NewUserService(db, secretKey)
 	controller := controllers.NewTaskController(taskService, userService, secretKey)
